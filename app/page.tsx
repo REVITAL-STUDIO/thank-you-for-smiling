@@ -3,6 +3,11 @@ import rocket from "../public/images/rocket.svg"
 import community from "../public/images/community.svg"
 import career from "../public/images/career.svg"
 import results from "../public/images/results.svg"
+import { MdOutlineArrowRightAlt } from "react-icons/md";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import Footer from "@/components/footer";
+
 
 export default function Home() {
   return (
@@ -174,29 +179,7 @@ export default function Home() {
           <button className="bg-white px-[4rem] py-[1rem]">Contact</button>
         </div>
       </section>
-      <nav className="w-full">
-        <div className="flex justify-between bg-[#171738] items-end px-[3rem]">
-          <div className="flex flex-col gap-6">
-            <Image
-              src={"/images/logo.png"}
-              height={400}
-              width={400}
-              alt="logo"
-            />
-            <p className="text-[#F1C90]">Thank You for Smilining. All rights reserved.</p>
-          </div>
-          <p className="text-white">Developed by <span className="font-bold">REVITAL Studio</span></p>
-          <div className="flex flex-col text-white">
-            <a>About Us</a>
-            <a>Programs</a>
-            <a>Donate</a>
-            <a>Book</a>
-            <div className="flex gap-3">
-
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Footer />
     </main>
   );
 }
