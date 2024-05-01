@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 219, 220;
@@ -25,4 +27,21 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+.radial-gradient-development { 
+  background: radial-gradient(circle at center 200%, #171738 50%, #726C00 65%, #171738 85%);
+}
+
+.radial-gradient-testimonies { 
+  background: radial-gradient(circle at center -100%, #090B0A 50%, #3423A6 75%, #090B0A 98%);
+}
+
+.linear-gradient { 
+  background: linear-gradient(135deg, white 25%, #E8C201 75%);
+}
+
+.shadow {
+  box-shadow: 0px 0px 10px rgba(0, 0, 4, 0.8); /* Box shadow */
 }
