@@ -1,12 +1,22 @@
 import React from "react";
+import Image from "next/image";
 
 function Results() {
   return (
     <div className="w-full h-screen  bg-gradient-to-b to-[#171738] from-[#3423A6] flex justify-center items-center">
       <div className="w-full h-5/6  flex flex-wrap justify-center content-center items-center gap-4 text-white">
         <div className="w-1/4 h-2/5 bg-[#3423A6] shadow-md rounded-lg text-base hover:scale-105 hover:shadow-xl transition ease-in-out duration-150">
-          <h1 className="mt-[10%] px-4">Mentorship & Support</h1>
-          <p className="mt-[10%] text-xs px-4">
+          <div className="w-full h-3/5 flex justify-center items-center">
+            <Image
+              src={"/images/Help.png"}
+              alt="help"
+              width={175}
+              height={175}
+            />
+          </div>
+
+          <h1 className="mt-[2%] px-4">Mentorship & Support</h1>
+          <p className="mt-[5%] text-xs px-4">
             Ongoing mentorship and support from experienced professionals to
             guide teens through their training and career development journey.
           </p>
@@ -37,8 +47,14 @@ function Results() {
           </p>
         </div>
         <div className="w-1/4 h-2/5 bg-[#3423A6]  shadow-md rounded-lg text-base hover:scale-105 hover:shadow-xl transition ease-in-out duration-150">
-          <h1 className="mt-[10%] px-4">Hands-On Learning</h1>
-          <p className="mt-[10%] text-xs px-4">
+          <Image
+            src={"/images/Mentor.png"}
+            alt="help"
+            width={175}
+            height={175}
+          />
+          <h1 className="mt-[2%] px-4">Hands-On Learning</h1>
+          <p className="mt-[5%] text-xs px-4">
             Practical, hands-on training in a supportive environment to build
             confidence, competence, and independence.
           </p>

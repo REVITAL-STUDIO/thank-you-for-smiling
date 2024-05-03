@@ -11,7 +11,7 @@ function Passion() {
         </h1>
       </div>
       <div className="w-full h-3/4  flex justify-center items-center">
-        <div className="w-[95%] h-full flex justify-center items-center bg-[url('/images/kids.jpg')] bg-cover bg-bottom ">
+        <div className="w-[95%] h-full flex justify-center items-center bg-[url('/images/kids.jpg')] rounded-tl-full rounded-tr-full bg-cover bg-bottom ">
           <div className="w-full h-full bg-black/50 flex flex-col justify-end text-white">
             <h1 className="font-cheapSignage text-white p-4 text-3xl">
               <span className="text-[#FFF200] ">Empowering Change:</span> Our
