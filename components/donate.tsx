@@ -5,7 +5,7 @@ function Donate() {
     <section className="w-full h-300 flex items-center justify-center">
       <div className="flex w-[95%] justify-between text-black">
         <div className="flex flex-col gap-4 justify-center">
-          <h3 className="text-5xl font-dmSans font-medium italic">
+          <h3 className="text-3xl font-cheapSignage font-medium italic">
             Support Our Mission Today
           </h3>
           <p>

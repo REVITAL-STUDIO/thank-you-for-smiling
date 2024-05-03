@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'CheapSignage Standard';
+    font-style: normal;
+    font-weight: normal;
+    src: local('CheapSignage Standard'), url('/fonts/CheapSignage Standard.woff') format('woff');
+    }

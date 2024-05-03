@@ -12,7 +12,7 @@ function Nav() {
           <li>Donate</li>
           <li>Purchase</li>
         </ul>
-        <button className=" text-base font-dmSans shadow-lg font-bold w-24 h-24 rounded-full border text-white">
+        <button className=" text-base font-dmSans shadow-lg font-bold w-20 h-20 rounded-full border text-white">
           Contact
         </button>
       </div>

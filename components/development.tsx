@@ -12,7 +12,7 @@ function Development() {
       {/* Title */}
       <div className="w-full h-[35%] flex justify-center">
         <div className="w-[95%] h-full flex flex-col justify-evenly">
-          <h1 className="text-5xl font-dmSans font-medium text-[#FFF200] w-3/5">
+          <h1 className="text-5xl font-cheapSignage font-medium text-[#FFF200] w-3/5">
             <span className="text-white italic">Unlocking Potential</span>{" "}
             Through Comprehensive Development Programs.
           </h1>

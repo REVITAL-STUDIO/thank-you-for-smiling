@@ -4,7 +4,7 @@ import { IoMdAdd } from "react-icons/io";
 function FAQ() {
   return (
     <section className="w-full h-600 bg-[#3423A6] flex flex-col justify-center">
-      <h1 className="text-white text-5xl p-4 font-dmSans font-medium italic">
+      <h1 className="text-white text-5xl p-4 font-cheapSignage font-medium ">
         FAQ
       </h1>
       <div className="flex w-3/4 h-[66%] items-center ">

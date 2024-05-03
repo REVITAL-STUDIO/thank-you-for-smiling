@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       fontFamily: {
         kanit: ['Kanit', 'sans-serif'],
-        dmSans: ['DM Sans', 'sans-serif']
+        dmSans: ['DM Sans', 'sans-serif'],
+        cheapSignage: ['CheapSignage Standard', 'sans-serif'],
       },  
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -24,8 +25,9 @@ const config: Config = {
         300: "300px",
         500: "500px",
         600: "600px",
-        750: "740px"
-
+        750: "740px",
+        850: "850px",
+        1000: "1000px"
       }
     },
   },

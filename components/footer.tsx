@@ -3,7 +3,7 @@ import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-const nav = () => {
+const Footer = () => {
   return (
     <div className="flex justify-between w-full bg-[#171738] items-center h-300">
       <div className="flex flex-col gap-4 w-1/4 h-full justify-center p-4">
@@ -39,4 +39,4 @@ const nav = () => {
   );
 };
 
-export default nav;
+export default Footer;
