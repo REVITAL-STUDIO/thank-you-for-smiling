@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      borderRadius: {
+        '4xl': '50px',
+        '5xl': '75px'
+      },
       fontSize: {
         'large': '200px'
       },
