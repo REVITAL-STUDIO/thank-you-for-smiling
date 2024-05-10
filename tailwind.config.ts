@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'large': '200px'
+      },
       fontFamily: {
         kanit: ['Kanit', 'sans-serif'],
         dmSans: ['DM Sans', 'sans-serif'],
