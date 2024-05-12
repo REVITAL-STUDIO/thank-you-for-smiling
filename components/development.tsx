@@ -4,14 +4,14 @@ import rocket from "../public/images/rocket.svg";
 import community from "../public/images/community.svg";
 import career from "../public/images/career.svg";
 import results from "../public/images/results.svg";
-import '../app/globals.css'
+import "../app/globals.css";
 function Development() {
   return (
-    <section className=" radial-gradient-development h-screen">
+    <section className=" bg-[#171738] h-screen">
       {/* Title */}
       <div className="w-full h-[35%] flex justify-center">
         <div className="w-[95%] h-full flex flex-col justify-evenly">
-          <h1 className="text-5xl font-cheapSignage font-medium text-[#FFF200] w-3/5">
+          <h1 className="text-5xl font-cheapSignage font-medium text-[#F1C900] w-3/5">
             <span className="text-white italic">Unlocking Potential</span>{" "}
             Through Comprehensive Development Programs.
           </h1>
@@ -19,8 +19,8 @@ function Development() {
       </div>
       {/* Cards */}
       <div className="w-full flex items-center justify-center">
-        <div className="flex w-[95%] justify-between">
-          <div className="flex flex-col bg-[#090B0A]/90 w-[20%] rounded-md px-[2%] pt-[2%] pb-[5%] shadow-md">
+        <div className="flex w-[95%] justify-between font-dmSans">
+          <div className="flex flex-col bg-[#090B0A]/90  w-[20%] rounded-md px-[2%] pt-[2%] pb-[5%] shadow-md">
             <Image src={rocket} alt="rocket" className="w-12 h-12" />
             <h3 className="text-white mt-[10%]">Launch Potential</h3>
             <p className="text-[#C8C8C8] mt-[10%] text-sm">

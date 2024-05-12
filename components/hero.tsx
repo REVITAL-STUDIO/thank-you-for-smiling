@@ -6,11 +6,11 @@ function Hero() {
     <section className="w-full bg-[#171738] h-750">
       <div className="w-full h-full flex justify-center items-center">
         <div className="w-2/3 h-3/4 flex flex-col justify-end">
-          <h1 className=" text-5xl text-left px-4  font-medium  text-[#FFF200] font-cheapSignage">
+          <h1 className=" text-5xl text-left px-4  font-medium  text-[#F1C900] font-cheapSignage">
             <span className="italic text-white">Empowering Our Youth:</span>{" "}
             Supporting Special Needs Children and At-Risk Teens
           </h1>
-          <h3 className="mt-4 px-4 text-white text-lg">
+          <h3 className="mt-4 px-4 text-white text-lg font-dmSans">
             {" "}
             Making Our Kids of Today Develop Skills for Tomorrow.
           </h3>

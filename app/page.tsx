@@ -17,7 +17,6 @@ export default function Home() {
       <About />
       <Development />
       <Donate />
-      <Testimonies />
       <Book />
       <FAQ />
       <Footer />

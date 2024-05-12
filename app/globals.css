@@ -35,12 +35,12 @@ body {
   background: radial-gradient(circle at center 200%, #171738 50%, #726C00 65%, #171738 85%);
 }
 
-.radial-gradient-testimonies { 
-  background: radial-gradient(circle at center -100%, #090B0A 50%, #3423A6 75%, #090B0A 98%);
+.radial-gradient-book { 
+  background: radial-gradient(circle at center -100%, #090B0A 50%, #726C00 75%, #090B0A 98%);
 }
 
 .linear-gradient { 
-  background: linear-gradient(135deg, white 25%, #E8C201 75%);
+  background: linear-gradient(135deg, white 25%, rgb(215, 215, 215) 50%, #3423A6 75%);
 }
 
 .shadow {

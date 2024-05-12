@@ -5,7 +5,7 @@ function Results() {
   return (
     <div className="w-full h-screen  bg-gradient-to-b to-[#171738] from-[#3423A6] flex justify-center items-center">
       <div className="w-full h-5/6  flex flex-wrap justify-center content-center items-center gap-4 text-white">
-        <div className="w-1/4 h-2/5 bg-[#3423A6] shadow-md rounded-lg text-base hover:scale-105 hover:shadow-xl transition ease-in-out duration-150">
+        <div className="w-1/4 h-2/5 bg-[#3423A6] shadow-md rounded-lg text-base  hover:scale-105 hover:shadow-xl transition ease-in-out duration-150">
           <div className="w-full h-3/5 flex justify-center items-center">
             <Image
               src={"/images/Help.png"}
