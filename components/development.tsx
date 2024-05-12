@@ -4,8 +4,7 @@ import rocket from "../public/images/rocket.svg";
 import community from "../public/images/community.svg";
 import career from "../public/images/career.svg";
 import results from "../public/images/results.svg";
-import "/Volumes/REVITAL/In Progress/thank-you-for-smiling-main/app/globals.css";
-
+import '../app/globals.css'
 function Development() {
   return (
     <section className=" radial-gradient-development h-screen">
