@@ -36,11 +36,11 @@ body {
 }
 
 .radial-gradient-book { 
-  background: radial-gradient(circle at center -100%, #090B0A 50%, #726C00 75%, #090B0A 98%);
+  background: radial-gradient(circle at center -100%, #090B0A 50%, #3423A6 75%, #090B0A 98%);
 }
 
 .linear-gradient { 
-  background: linear-gradient(135deg, white 25%, rgb(215, 215, 215) 50%, #3423A6 75%);
+  background: linear-gradient(135deg, white 25%,  #3423A6 75%);
 }
 
 .shadow {
@@ -49,5 +49,10 @@ body {
 
 .stroke {
   -webkit-text-stroke: 5px #F1C900;
+
+}
+
+.lifted {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8); /* Shadow effect */
 
 }
