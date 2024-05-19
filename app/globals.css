@@ -32,11 +32,11 @@ body {
 
 
 .radial-gradient-development { 
-  background: radial-gradient(circle at center 200%, #171738 50%, #726C00 65%, #171738 85%);
+  background: radial-gradient(circle at center 150%, #3423A6 57%, #726C00 70%, #3423A6 80%);
 }
 
 .radial-gradient-book { 
-  background: radial-gradient(circle at center -100%, #090B0A 50%, #3423A6 75%, #090B0A 98%);
+  background: radial-gradient(circle at center -10%, #3423A6 50%, #726C00 65%, #3423A6 85%);
 }
 
 .linear-gradient { 
@@ -53,6 +53,6 @@ body {
 }
 
 .lifted {
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8); /* Shadow effect */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
 
 }

@@ -1,47 +1,77 @@
+"use client";
+
 import React from "react";
-import { IoMdAdd } from "react-icons/io";
+import { IoMdAdd, IoMdRemove } from "react-icons/io";
+import { useState, useEffect } from "react";
 
 function FAQ() {
+  const faqData = [
+    {
+      question: "Who is Eligible for the program",
+      answer: "The application deadline is June 1st.",
+    },
+    {
+      question: "Is there an application deadline?",
+      answer: "The application deadline is June 1st.",
+    },
+    {
+      question: "How would this help my child's future career?",
+      answer:
+        "This program provides essential skills and networking opportunities that can significantly enhance your child's career prospects.",
+    },
+    {
+      question: "Who qualifies?",
+      answer:
+        "Any student aged 14-18 with a passion for learning qualifies for this program.",
+    },
+  ];
+
+  // Initialize handleFAQ state with an array of false values to represent closed state for each question
+  const [handleFAQ, setHandleFAQ] = useState(Array(faqData.length).fill(false));
+
+  // Function to toggle the answer visibility for a specific question at the given index
+  const toggleAnswers = (index: number) => {
+    setHandleFAQ(handleFAQ.map((item, i) => (i === index ? !item : false)));
+  };
   return (
-    <section className="w-full h-screen bg-[#3423A6] flex flex-col justify-center">
-      <h1 className="text-white text-5xl p-4 font-dmSans font-medium italic">
+    <section className="w-full h-screen bg-[#090B0A] flex flex-col justify-center">
+      <h1 className="text-white text-5xl p-4 font-dmSans font-bold italic">
         FAQ
       </h1>
-      <div className="flex w-full h-[66%] items-center justify-center ">
-        <ul className="w-3/4 h-full   relative left-4 flex flex-col justify-center gap-12 text-white text-lg">
-          <div className="w-full h-[12%] flex items-center justify-between border-b">
-            <li className="w-full font-bold text-xl">
-              Who is eligible for the Programs?
+      <div className="flex w-full h-[66%] items-center justify-center">
+        <ul className="w-full px-4">
+          {faqData.map((faq, index) => (
+            <li key={index}>
+              <div
+                className={`w-full overflow-hidden transition-max-h ${
+                  handleFAQ[index] ? "max-h-40 md:max-h-72" : "h-[12%]"
+                } transition-all duration-200 ease-in-out flex items-center justify-between border-b `}
+              >
+                <span className="font-bold text-xl text-white font-cheapSignage">
+                  {faq.question}
+                </span>
+                <button
+                  onClick={() => toggleAnswers(index)}
+                  className="p-2 rounded-full hover:bg-[#F1C900] transition duration-150 ease-in-out bg-white flex justify-center items-center"
+                >
+                  {handleFAQ[index] ? (
+                    <IoMdRemove className="text-[#8E7DFF]" />
+                  ) : (
+                    <IoMdAdd className="text-[#8E7DFF]" />
+                  )}
+                </button>
+              </div>
+              {handleFAQ[index] && (
+                <div className="mt-2">
+                  <p className="text-base text-white">{faq.answer}</p>
+                </div>
+              )}
             </li>
-            <button className="p-2 w-1/6 rounded-full border bg-white flex justify-center items-center">
-              <IoMdAdd className="text-[#8E7DFF]" />
-            </button>
-          </div>
-          <div className="w-full h-[12%] flex items-center justify-between border-b">
-            <li className="w-full font-bold text-xl">
-              Is there an application deadline?
-            </li>
-            <button className="p-2 w-1/6 rounded-full border bg-white  flex justify-center items-center">
-              <IoMdAdd className="text-[#8E7DFF]" />
-            </button>
-          </div>
-          <div className="w-full h-[12%] flex items-center justify-between border-b">
-            <li className="w-full font-bold text-xl">
-              How would this help my childs future career?
-            </li>
-            <button className="p-2 w-1/6 rounded-full border bg-white  flex justify-center items-center">
-              <IoMdAdd className="text-[#8E7DFF]" />
-            </button>
-          </div>
-          <div className="w-full h-[12%] flex items-center justify-between border-b">
-            <li className="w-full font-bold text-xl">Who qualifies?</li>
-            <button className="p-2 w-1/6 rounded-full border bg-white  flex justify-center items-center">
-              <IoMdAdd className="text-[#8E7DFF]" />
-            </button>
-          </div>
+          ))}
         </ul>
       </div>
-      <button className="text-white rounded-full w-24 h-24 flex justify-center items-center border relative left-4 ">
+
+      <button className="text-white border-dashed rounded-full w-24 h-24 flex justify-center items-center border-[2px] relative left-4 ">
         Reach Out
       </button>
     </section>

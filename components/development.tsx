@@ -16,7 +16,7 @@ function Development() {
             Through Comprehensive Development Programs.
           </h1>
           <div className="flex items-center gap-8">
-            <button className="w-24 h-24 border-[2px] lifted text-white border-white rounded-full">
+            <button className="w-24 h-24 border-[2px] border-dashed lifted text-white border-white rounded-full">
               Volunteer
             </button>
             <button className="w-24 h-24 bg-[#F1C900] lifted text-black rounded-full ">
