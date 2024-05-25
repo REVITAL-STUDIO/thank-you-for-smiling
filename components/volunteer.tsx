@@ -3,29 +3,29 @@ import Image from "next/image";
 
 function Volunteer() {
   return (
-    <section className="bg-gradient-to-b to-[#171738] from-[#41419E]  w-full h-screen flex justify-center items-center">
-      <main className="w-5/6 h-5/6 bg-gradient-to-t from-[#FFF200] to-[#F1C900] rounded-md shadow-lg flex">
-        <div className="w-1/2 h-full flex justify-center items-center relative">
+    <section className="bg-gradient-to-b to-[#171738] from-[#41419E]  w-full py-[10%] flex justify-center items-center">
+      <main className="w-5/6 p-4 bg-gradient-to-t from-[#FFF200] to-[#F1C900] rounded-md shadow-lg flex">
+        <div className="w-1/2 py-[25%] flex justify-center items-center relative">
           <Image
             src={"/images/image-21.png"}
             width={175}
             height={175}
             alt="volunteer"
-            className="absolute left-[25%]"
+            className="absolute left-[25%] top-24"
           />
           <Image
             src={"/images/image-22.png"}
             width={150}
             height={150}
             alt="volunteer"
-            className="absolute left-[15%] top-[30%]"
+            className="absolute left-[5%] top-32"
           />
           <Image
             src={"/images/image-23.png"}
             width={150}
             height={150}
             alt="volunteer"
-            className="absolute right-[15%]"
+            className="absolute right-[15%] bottom-24"
           />
         </div>
         <div className="w-1/2 h-full flex flex-col justify-center ">

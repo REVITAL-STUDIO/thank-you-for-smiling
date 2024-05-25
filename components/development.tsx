@@ -9,8 +9,8 @@ function Development() {
   return (
     <section className="radial-gradient-development h-screen">
       {/* Title */}
-      <div className="w-full h-[35%] flex justify-center">
-        <div className="w-[95%] h-full flex items-center justify-between">
+      <div className="w-full py-[5%] flex justify-center">
+        <div className="w-[95%] py-[5%] flex items-center justify-between">
           <h1 className="text-5xl font-cheapSignage font-medium text-[#F1C900] w-3/5">
             <span className="text-white italic">Unlocking Potential</span>{" "}
             Through Comprehensive Development Programs.
@@ -30,8 +30,8 @@ function Development() {
         <div className="flex w-[95%] justify-between font-dmSans">
           <div className="flex flex-col bg-[#090B0A]/90  w-[20%] rounded-md px-[2%] pt-[2%] pb-[5%] lifted">
             <Image src={rocket} alt="rocket" className="w-12 h-12" />
-            <h3 className="text-white mt-[10%]">Launch Potential</h3>
-            <p className="text-[#C8C8C8] mt-[10%] text-sm">
+            <h3 className="text-white mt-[10%] text-lg">Launch Potential</h3>
+            <p className="text-[#C8C8C8] mt-[10%] text-base">
               Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
               turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
               nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
@@ -41,8 +41,8 @@ function Development() {
           </div>
           <div className="flex flex-col bg-[#090B0A]/90 w-[20%] rounded-md px-[2%] pt-[2%] pb-[5%] lifted">
             <Image src={community} alt="rocket" className="w-12 h-12" />
-            <h3 className="text-white mt-[10%]">Community</h3>
-            <p className="text-[#C8C8C8] mt-[10%] text-sm">
+            <h3 className="text-white mt-[10%] text-lg">Community</h3>
+            <p className="text-[#C8C8C8] mt-[10%] text-base">
               Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
               turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
               nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
@@ -52,8 +52,8 @@ function Development() {
           </div>
           <div className="flex flex-col bg-[#090B0A]/90 w-[20%] rounded-md px-[2%] pt-[2%] pb-[5%] lifted">
             <Image src={career} alt="rocket" className="w-12 h-12" />
-            <h3 className="text-white mt-[10%]">Career Preparation</h3>
-            <p className="text-[#C8C8C8] mt-[10%] text-sm">
+            <h3 className="text-white mt-[10%] text-lg">Career Preparation</h3>
+            <p className="text-[#C8C8C8] mt-[10%] text-base">
               Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
               turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
               nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
@@ -63,8 +63,8 @@ function Development() {
           </div>
           <div className="flex flex-col bg-[#090B0A]/90 w-[20%] rounded-md px-[2%] pt-[2%] pb-[5%] lifted">
             <Image src={results} alt="rocket" className="w-12 h-12" />
-            <h3 className="text-white mt-[10%]">Real Results</h3>
-            <p className="text-[#C8C8C8] mt-[10%] text-sm">
+            <h3 className="text-white mt-[10%] text-lg">Real Results</h3>
+            <p className="text-[#C8C8C8] mt-[10%] text-base">
               Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
               turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
               nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum

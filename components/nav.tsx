@@ -4,8 +4,8 @@ import Link from "next/link";
 
 function Nav() {
   return (
-    <div className="w-full h-[100px] bg-[#3423A6] flex justify-center items-center">
-      <div className="w-[95%] h-full flex justify-between items-center">
+    <div className="w-full p-4 bg-[#3423A6] flex justify-center items-center">
+      <div className="w-[95%] flex justify-between items-center">
         <div className="w-1/4 flex justify-between items-center ">
           <Link
             href="/"

@@ -2,8 +2,8 @@ import React from "react";
 
 function Housing() {
   return (
-    <section className="w-full h-screen bg-gradient-to-t to-[#171738] from-[#41419E] flex justify-center items-center">
-      <main className="w-5/6 h-5/6 flex items-start flex-col justify-between ">
+    <section className="w-full py-[5%] bg-gradient-to-t to-[#171738] from-[#41419E] flex justify-center items-center">
+      <main className="w-5/6 py-4 flex items-start flex-col justify-between ">
         <div className="w-full h-1/3 flex items-center relative">
           <div className=" flex items-center w-fit h-full">
             <div className="w-[215px] h-[215px] bg-[url('/images/teach.jpg')] bg-center border rounded-xl shadow-xl  left-0"></div>

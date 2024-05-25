@@ -34,17 +34,17 @@ function FAQ() {
     setHandleFAQ(handleFAQ.map((item, i) => (i === index ? !item : false)));
   };
   return (
-    <section className="w-full h-screen bg-[#090B0A] flex flex-col justify-center">
+    <section className="w-full p-4 bg-[#090B0A] flex flex-col justify-center">
       <h1 className="text-white text-5xl p-4 font-dmSans font-bold italic">
         FAQ
       </h1>
-      <div className="flex w-full h-[66%] items-center justify-center">
-        <ul className="w-full px-4">
+      <div className="flex w-full py-4 items-center justify-center">
+        <ul className="w-full px-4 py-[2%]">
           {faqData.map((faq, index) => (
             <li key={index}>
               <div
                 className={`w-full overflow-hidden transition-max-h ${
-                  handleFAQ[index] ? "max-h-40 md:max-h-72" : "h-[12%]"
+                  handleFAQ[index] ? "my-[5%] py-[2%]" : "my-[2%] py-[2%]"
                 } transition-all duration-200 ease-in-out flex items-center justify-between border-b `}
               >
                 <span className="font-bold text-xl text-white font-cheapSignage">

@@ -3,9 +3,9 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <section className="w-full bg-gradient-to-b to-[#171738]  from-[#3423A6] h-750">
-      <div className="w-full h-full flex justify-center items-center">
-        <div className="w-2/3 h-3/4 flex flex-col justify-end">
+    <section className="w-full bg-gradient-to-b to-[#171738]  from-[#3423A6] p-4">
+      <div className="w-full  flex justify-center items-center">
+        <div className="w-2/3 py-[12%] flex flex-col justify-end">
           <h1 className=" text-7xl text-left px-4  font-medium  text-[#F1C900] font-cheapSignage">
             <span className="italic text-white">Empowering Our Youth:</span>{" "}
             Supporting Special Needs Children and At-Risk Teens
