@@ -2,7 +2,7 @@ import React from "react";
 
 function Donation() {
   return (
-    <div className="bg-gradient-to-b from-[#171738]  to-black h-screen flex justify-center items-center">
+    <div className="bg-gradient-to-b from-[#3423A6] via-[#171738]  to-black h-screen flex justify-center items-center">
       <div className="w-[95%] h-5/6 flex flex-col items-center justify-center relative">
         <h1 className="uppercase top-[-15%]  text-[#F1C900] font-dmSans italic text-large absolute z-50 font-extrabold">
           Donate

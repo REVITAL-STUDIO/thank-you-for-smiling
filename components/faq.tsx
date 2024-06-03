@@ -3,8 +3,48 @@
 import React from "react";
 import { IoMdAdd, IoMdRemove } from "react-icons/io";
 import { useState, useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function FAQ() {
+  const text = "FAQ";
+  const words = text.split(" ");
+
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+    triggerOnce: true,
+  });
+
+  const controls = useAnimation(); // Corrected the variable name
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [controls, inView]);
+
+  const wordAnimation = {
+    hidden: {},
+    visible: {},
+  };
+
+  const characterAnimation = {
+    hidden: {
+      opacity: 0,
+      y: `0.25em`,
+    },
+    visible: {
+      opacity: 1,
+      y: `0em`,
+      transition: {
+        duration: 1,
+        ease: [0.2, 0.65, 0.3, 0.9],
+      },
+    },
+  };
+
   const faqData = [
     {
       question: "Who is Eligible for the program",
@@ -34,20 +74,48 @@ function FAQ() {
     setHandleFAQ(handleFAQ.map((item, i) => (i === index ? !item : false)));
   };
   return (
-    <section className="w-full p-4 bg-[#090B0A] flex flex-col justify-center">
+    <section className="w-full p-4 bg-[#090B0A] -mb-1 flex flex-col justify-center">
       <h1 className="text-white text-5xl p-4 font-dmSans font-bold italic">
-        FAQ
+        <motion.span initial="initial" animate={controls}>
+          {words.map((word, index) => (
+            <motion.span
+              ref={ref}
+              aria-hidden="true"
+              key={index}
+              initial="hidden"
+              animate={controls}
+              variants={wordAnimation}
+              transition={{
+                delayChildren: index * 0.1,
+                staggerChildren: 0.05,
+              }}
+            >
+              {word.split("").map((char, charIndex) => (
+                <motion.span
+                  key={charIndex}
+                  className="char"
+                  variants={characterAnimation}
+                >
+                  {char}
+                </motion.span>
+              ))}{" "}
+              {/* Space between words */}
+            </motion.span>
+          ))}
+        </motion.span>
       </h1>
       <div className="flex w-full py-4 items-center justify-center">
-        <ul className="w-full px-4 py-[2%]">
+        <ul className="w-full px-4 py-[2%] ">
           {faqData.map((faq, index) => (
             <li key={index}>
               <div
                 className={`w-full overflow-hidden transition-max-h ${
-                  handleFAQ[index] ? "my-[5%] py-[2%]" : "my-[2%] py-[2%]"
+                  handleFAQ[index]
+                    ? "my-[5%] xl:py-[2%] py-[5%]"
+                    : "my-[2%] xl:py-[2%] py-[5%]"
                 } transition-all duration-200 ease-in-out flex items-center justify-between border-b `}
               >
-                <span className="font-bold text-xl text-white font-cheapSignage">
+                <span className="font-bold text-base xl:text-xl text-white font-cheapSignage">
                   {faq.question}
                 </span>
                 <button

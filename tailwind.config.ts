@@ -15,6 +15,14 @@ const config: Config = {
       fontSize: {
         'large': '200px'
       },
+      screens: {
+        xs: "320px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+       
+      },
       fontFamily: {
         kanit: ['Kanit', 'sans-serif'],
         dmSans: ['DM Sans', 'sans-serif'],
