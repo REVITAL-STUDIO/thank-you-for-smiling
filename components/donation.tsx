@@ -2,7 +2,7 @@
 import React from "react";
 import { delay, motion } from 'framer-motion';
 import { useRef } from "react";
-import useInView from '../hooks/useInView'; // Adjust the import path as needed
+import useInView from '../hooks/useInView'; 
 
 const pageVariants = {
   hidden: { opacity: 0, y: 20 },

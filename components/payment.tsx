@@ -3,7 +3,7 @@ import React from "react";
 import { useState, useRef } from "react";
 import { FaDollarSign } from "react-icons/fa";
 import { motion, Variants } from 'framer-motion';
-import useInView from '../hooks/useInView'; // Adjust the import path as needed
+import useInView from '../hooks/useInView'; 
 
 
 function Payment() {
