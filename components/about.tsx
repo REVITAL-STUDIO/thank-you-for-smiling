@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import { useAnimation, motion } from "framer-motion";
+import { useAnimation, motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 function About() {
@@ -57,14 +57,55 @@ function About() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
+  const container = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start end", "end start"],
+  });
+
+  const sm = useTransform(scrollYProgress, [0, 1], [0, -50]);
+  const md = useTransform(scrollYProgress, [0, 1], [0, -150]);
+  const lg = useTransform(scrollYProgress, [0, 1], [0, -250]);
+
+  const images = [
+    {
+      src: "/images/image-10.jpg",
+      y: 0,
+    },
+    {
+      src: "/images/smile.jpeg",
+      y: lg,
+    },
+    { src: "/images/testimonialPic-1.png", y: md },
+  ];
+
   return (
-    <section className="w-full xl:flex py-[5%] xl:py-[2%] -mb-1 bg-gradient-to-b from-[#171738] via-[#726C00]/80 to-[#3423A6]">
-      <div className="w-[100%] xl:w-[60%] py-[5%] xl:py-[5%] rounded-tr-xl rounded-br-xl relative flex justify-center items-center">
-        <div className="bg-[url('/images/paint-hands.png')] w-[80%] py-[35%] rounded-lg bg-cover -rotate-[15deg]"></div>
+    <section
+      ref={container}
+      className="w-full xl:flex py-[5%]  xl:py-[2%] -mb-1 bg-gradient-to-b from-[#171738] via-[#726C00]/80 to-[#3423A6]"
+    >
+      <div className="w-[100%] xl:w-[50%] py-[5%] xl:py-[5%]  rounded-tr-xl rounded-br-xl relative flex justify-center items-center">
+        <div className="images">
+          {images.map(({ src, y }, i) => {
+            return (
+              <motion.div
+                style={{ y }}
+                key={`i_${i}`}
+                className="imageContainer"
+              >
+                <Image src={src} alt="image" fill />
+              </motion.div>
+            );
+          })}
+        </div>
       </div>
       <div className=" xl:w-[40%] w-[100%] py-[10%] xl:py-0 flex justify-center items-center ">
         <div className="flex flex-col gap-10 text-center w-full items-center relative top-[5%]">
-          <h1 className="w-[85%] xl:text-4xl text-3xl text-[#F1C900] text-left font-cheapSignage font-medium">
+          <motion.h1
+            style={{ y: lg }}
+            className="w-[85%] xl:text-4xl text-5xl text-white text-left font-dmSans font-bold"
+          >
             <motion.span initial="initial" animate={controls}>
               {words.map((word, index) => (
                 <motion.span
@@ -75,7 +116,7 @@ function About() {
                   animate={controls}
                   variants={wordAnimation}
                   transition={{
-                    delayChildren: index * 0.1,
+                    delayChildren: index * 0.05,
                     staggerChildren: 0.05,
                   }}
                   className={[
@@ -99,8 +140,11 @@ function About() {
                 </motion.span>
               ))}
             </motion.span>
-          </h1>
-          <p className="w-[85%]  text-lg text-white text-left">
+          </motion.h1>
+          <motion.p
+            style={{ y: lg }}
+            className="w-[85%] font-cheapSignage text-lg text-[#F1C900] text-left"
+          >
             <motion.span
               initial="hidden"
               animate={controls}
@@ -111,7 +155,7 @@ function About() {
               activities designed to enhance communication, problem-solving, and
               resilience.
             </motion.span>
-          </p>
+          </motion.p>
         </div>
       </div>
     </section>

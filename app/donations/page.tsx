@@ -7,7 +7,6 @@ import Payment from "@/components/payment";
 function Donate() {
   return (
     <div>
-      <Nav />
       <Donation />
       <Payment />
     </div>

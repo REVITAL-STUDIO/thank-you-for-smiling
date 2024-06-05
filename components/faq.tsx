@@ -75,7 +75,7 @@ function FAQ() {
   };
   return (
     <section className="w-full p-4 bg-[#090B0A] -mb-1 flex flex-col justify-center">
-      <h1 className="text-white text-5xl p-4 font-dmSans font-bold italic">
+      <h1 className="text-white text-6xl p-4 font-dmSans font-bold italic">
         <motion.span initial="initial" animate={controls}>
           {words.map((word, index) => (
             <motion.span

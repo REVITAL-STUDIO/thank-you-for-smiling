@@ -1,16 +1,17 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import rocket from "../public/images/rocket.svg";
 import community from "../public/images/community.svg";
 import career from "../public/images/career.svg";
 import results from "../public/images/results.svg";
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation, useScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 function Development() {
-  const text = "Through Comprehensive Development Programs";
+  const text =
+    "Unlocking Potential: Through Comprehensive Development Programs";
   const words = text.split(" ");
 
   const { ref, inView } = useInView({
@@ -48,14 +49,32 @@ function Development() {
     },
   };
 
+  const container = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start end", "end start"],
+  });
+
+  const sm = useTransform(scrollYProgress, [0, 1], [0, -50]);
+  const md = useTransform(scrollYProgress, [0, 1], [0, -50]);
+  const lg = useTransform(scrollYProgress, [0, 1], [0, -250]);
+
+  const scale = useTransform(scrollYProgress, [0, 1], [0.85, 1]);
+
   return (
-    <section className="radial-gradient-development min-h-screen">
+    <section
+      ref={container}
+      className="radial-gradient-development min-h-screen"
+    >
       {/* Title */}
-      <div className="w-full py-[5%] flex  justify-center">
-        <div className="w-[95%] flex flex-col xl:flex-row xl:items-center xl:justify-between">
-          <h1 className="text-3xl xl:text-5xl font-cheapSignage font-medium text-[#F1C900] xl:w-3/5 w-full p-[5%] xl:p-0">
+      <div className="w-full py-[10%] flex  justify-center">
+        <motion.div
+          style={{ y: sm }}
+          className="w-[95%] flex flex-col mt-[10%] xl:flex-row xl:items-center xl:justify-between"
+        >
+          <h1 className="text-5xl font-bold xl:text-7xl font-dmSans text-[#Fff] xl:w-3/5 w-full p-[5%] xl:p-0">
             <motion.span initial="initial" animate={controls}>
-              <span className="italic text-white">Unlocking Potential:</span>{" "}
               {words.map((word, index) => (
                 <motion.span
                   ref={ref}
@@ -83,7 +102,7 @@ function Development() {
               ))}
             </motion.span>
           </h1>
-          <div className="flex items-center gap-8 p-4">
+          <div className="flex items-center gap-8 px-8 xl:p-4">
             <button className="w-24 h-24 border-[2px] border-dashed lifted text-white border-white rounded-full">
               Volunteer
             </button>
@@ -91,11 +110,14 @@ function Development() {
               Donate
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
       {/* Cards */}
-      <div className="w-full xl:flex items-center justify-center">
-        <div className="flex flex-col xl:flex-row w-[95%] pt-[5%] justify-between items-center font-dmSans gap-y-4">
+      <motion.div
+        style={{ scale }}
+        className="w-full xl:flex items-center justify-center"
+      >
+        <div className="flex flex-col xl:flex-row w-[95%] justify-between items-center font-dmSans gap-y-4">
           <div className="flex flex-col bg-[#090B0A]/90  xl:w-[23%] w-[85%] rounded-md px-[2%] pt-[2%] pb-[5%] lifted ">
             <div className="p-4 border border-[#F1C900] rounded-full w-fit shadow-md">
               <Image src={rocket} alt="rocket" className="w-12 h-12" />
@@ -157,15 +179,18 @@ function Development() {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
       {/* Learn More */}
-      <div className="py-[3%] xl:py-0 flex justify-center items-center ">
+      <motion.div
+        style={{ y: sm }}
+        className="py-[3%] xl:py-0 flex justify-center items-center "
+      >
         <div className="w-[85%] xl:w-[95%] py-[5%]">
-          <button className="px-8 py-4 bg-white shadow-md font-cheapSignage rounded-full text-black flex justify-center items-center text-lg xl:text-sm">
+          <button className="p-8  bg-white shadow-md font-cheapSignage rounded-full text-black flex justify-center items-center text-lg">
             Learn More
           </button>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

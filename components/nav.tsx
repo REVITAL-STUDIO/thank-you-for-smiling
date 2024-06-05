@@ -54,7 +54,10 @@ function Nav() {
             </Link>
           </ul>
         </div>
-        <button className=" justify-center items-center relative hidden xl:flex">
+        <Link
+          href="/contact"
+          className=" justify-center items-center relative hidden xl:flex"
+        >
           <motion.div
             className="hidden xl:block  border-dashed w-20 h-20 rounded-full"
             style={{
@@ -71,7 +74,7 @@ function Nav() {
           <h2 className="text-base absolute font-dmSans shadow-lg font-bold italic text-white">
             Contact
           </h2>
-        </button>
+        </Link>
 
         {/* Mobile Responsive Menu */}
         <button
