@@ -5,7 +5,7 @@ function Volunteer() {
   return (
     <section className="bg-gradient-to-b to-[#090B0A] via-[#171738] from-[#41419E]  w-full py-[10%] flex justify-center items-center">
       <main className="w-5/6 p-4 bg-gradient-to-t from-[#FFF200] to-[#F1C900] rounded-md shadow-lg flex">
-        <div className="w-1/2 py-[25%] flex justify-center items-center relative">
+        <div className="hidden w-1/2 py-[25%] md:flex justify-center items-center relative">
           <Image
             src={"/images/image-21.png"}
             width={175}
@@ -28,11 +28,11 @@ function Volunteer() {
             className="absolute right-[15%] bottom-24"
           />
         </div>
-        <div className="w-1/2 h-full flex flex-col justify-center ">
-          <h1 className="text-8xl font-medium font-dmSans italic">
+        <div className="w-full md:w-1/2 h-full flex flex-col justify-center ">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-medium font-dmSans italic">
             Become a <span className="text-[#41419E] ">Volunteer</span>
           </h1>
-          <p className="text-base mt-[5%] w-3/4">
+          <p className="text-[0.7rem] md:text-[0.9rem] lg:text-base mt-[5%] w-3/4">
             Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
             turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
             nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum

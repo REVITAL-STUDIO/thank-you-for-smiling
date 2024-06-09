@@ -11,7 +11,7 @@ const contact = () => {
 
   return (
     <div ref={ref}>
-      <div className="min-h-screen flex justify-around items-center gap-12 bg-[#3423A6] text-white px-[4rem]">
+      <div className="min-h-screen flex justify-center md:justify-around items-center md:gap-12 bg-[#3423A6] text-white md:md:px-[4rem] py-[3.5rem] md:py-0">
         <motion.div
           className="flex flex-col gap-6"
           initial={{ opacity: 0, x: -40 }}
@@ -41,7 +41,7 @@ const contact = () => {
             Contact Us.
           </motion.h1>
           <form>
-            <div className="flex flex-col gap-4 w-[23rem]">
+            <div className="flex flex-col gap-4 w-[18rem]  md:w-[19rem] lg:w-[23rem]">
               <motion.div
                 className="flex flex-col gap-2"
                 initial={{ opacity: 0, x: -40 }}
@@ -208,7 +208,7 @@ const contact = () => {
           </motion.button>
         </motion.div>
         <motion.div
-          className="w-[40%]"
+          className="hidden lg:block  w-[40%]"
           initial={{ opacity: 0, x: 40 }}
           animate={
             inView

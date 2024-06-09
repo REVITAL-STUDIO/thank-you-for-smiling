@@ -3,9 +3,9 @@ import Image from "next/image";
 
 function Results() {
   return (
-    <div className="w-full h-screen  bg-gradient-to-b to-[#171738] from-[#3423A6] flex justify-center items-center">
-      <div className="w-full  flex flex-wrap justify-center content-center items-center gap-4 text-white">
-        <div className="w-1/4 p-4 bg-[#090B0A]/90 shadow-md rounded-lg text-base  hover:scale-95 hover:shadow-xl transition ease-in-out duration-150">
+    <div className="w-full bg-gradient-to-b to-[#171738] from-[#3423A6] flex justify-center items-center">
+      <div className="my-[6rem] lg:my-[4rem] w-full  flex flex-col md:flex-row flex-wrap justify-center content-center items-center gap-8 md:gap-4 text-white">
+        <div className="w-4/5 md:w-2/5 lg:w-1/4 p-4 bg-[#090B0A]/90 shadow-md rounded-lg text-base  hover:scale-95 hover:shadow-xl transition ease-in-out duration-150">
           <div className="p-4  flex justify-center items-center">
             <Image
               src={"/images/Help.png"}
@@ -23,7 +23,7 @@ function Results() {
             guide teens through their training and career development journey.
           </p>
         </div>
-        <div className="w-1/4 p-4 bg-[#090B0A]/90 shadow-md rounded-lg text-base  hover:scale-95 hover:shadow-xl transition ease-in-out duration-150">
+        <div className="w-4/5 md:w-2/5 lg:w-1/4 p-4 bg-[#090B0A]/90 shadow-md rounded-lg text-base  hover:scale-95 hover:shadow-xl transition ease-in-out duration-150">
           <div className="p-4  flex justify-center items-center">
             <Image
               src={"/images/launch.png"}
@@ -40,7 +40,7 @@ function Results() {
             culinary arts, and customer service—to prepare them for future jobs.
           </p>
         </div>
-        <div className="w-1/4 p-4 bg-[#090B0A]/90 shadow-md rounded-lg text-base  hover:scale-95 hover:shadow-xl transition ease-in-out duration-150">
+        <div className="w-4/5 md:w-2/5 lg:w-1/4 p-4 bg-[#090B0A]/90 shadow-md rounded-lg text-base  hover:scale-95 hover:shadow-xl transition ease-in-out duration-150">
           <div className="p-4  flex justify-center items-center">
             <Image
               src={"/images/support.png"}
@@ -57,7 +57,7 @@ function Results() {
             culinary arts, and customer service—to prepare them for future jobs.
           </p>
         </div>
-        <div className="w-1/4 p-4 bg-[#090B0A]/90 shadow-md rounded-lg text-base  hover:scale-95 hover:shadow-xl transition ease-in-out duration-150">
+        <div className="w-4/5 md:w-2/5 lg:w-1/4 p-4 bg-[#090B0A]/90 shadow-md rounded-lg text-base  hover:scale-95 hover:shadow-xl transition ease-in-out duration-150">
           <div className="p-4  flex justify-center items-center">
             <Image
               src={"/images/placement.png"}
@@ -74,7 +74,7 @@ function Results() {
             culinary arts, and customer service—to prepare them for future jobs.
           </p>
         </div>
-        <div className="w-1/4 p-4 bg-[#090B0A]/90 shadow-md rounded-lg text-base  hover:scale-95 hover:shadow-xl transition ease-in-out duration-150">
+        <div className="w-4/5 md:w-2/5 lg:w-1/4 p-4 bg-[#090B0A]/90 shadow-md rounded-lg text-base  hover:scale-95 hover:shadow-xl transition ease-in-out duration-150">
           <div className="p-4  flex justify-center items-center">
             <Image
               src={"/images/Mentor.png"}

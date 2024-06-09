@@ -41,7 +41,7 @@ function Donation() {
   return (
     <div
       ref={ref}
-      className="bg-gradient-to-b from-[#3423A6]  to-black h-screen flex justify-center items-center"
+      className="bg-gradient-to-b from-[#3423A6]  to-black h-screen flex justify-center items-start sm:items-center"
     >
       <motion.div
         className="w-[95%] h-5/6 flex flex-col items-center justify-center relative"
@@ -50,17 +50,17 @@ function Donation() {
         variants={pageVariants}
       >
         <motion.h1
-          className="uppercase top-[-15%]  text-[#F1C900] font-dmSans italic text-large absolute z-50 font-extrabold"
+          className="uppercase top-[8%] sm:top-[3%] md:top-[-15%]  text-[#F1C900] font-dmSans italic  text-[4.5rem] sm:text-[8rem] md:text-[11.5rem] lg:text-large absolute z-50 font-extrabold"
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? "slideBottom" : ""}
           variants={pageVariants}
         >
           Donate
         </motion.h1>
-        <div className="w-full h-[90%] rounded-bl-5xl rounded-br-5xl bg-[url('/images/kids-school.jpg')] z-10 bg-no-repeat bg-cover bg-center flex items-center justify-center shadow-xl">
+        <div className="max-w-[30rem] sm:max-w-full h-[50%] sm:h-[70%] md:h-[90%] md:rounded-bl-5xl md:rounded-br-5xl bg-[url('/images/kids-school.jpg')] z-10 bg-no-repeat bg-cover bg-center flex items-center justify-center shadow-xl">
           <div className="w-5/6 h-full flex flex-col justify-end gap-y-4">
             <motion.p
-              className=" text-white w-2/3 text-lg font-medium mb-[5%] "
+              className=" text-white w-full sm:w-2/3 text-[0.8rem] sm:text-lg font-medium mb-[5%] relative top-[15%] sm:top-0"
               initial={{ opacity: 0, x: -20 }}
               animate={inView ? "slideRight" : ""}
               variants={pageVariants}
