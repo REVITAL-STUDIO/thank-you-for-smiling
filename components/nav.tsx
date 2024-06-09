@@ -26,7 +26,7 @@ function Nav() {
   return (
     <div className="w-full p-4 bg-[#3423A6] flex justify-center items-center -mb-1">
       <div className="w-[95%] flex justify-between items-center">
-        <div className="w-1/4 flex justify-between items-center ">
+        <div className="flex justify-between items-center ">
           <Link
             href="/"
             className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow"
@@ -39,7 +39,7 @@ function Nav() {
               className="relative left-4"
             />
           </Link>
-          <ul className="xl:flex gap-x-12 p-4 hidden text-base font-medium font-cheapSignage  text-white ">
+          <ul className="md:flex gap-x-12 p-4 hidden text-base font-medium font-cheapSignage  text-white ">
             <Link
               className="transition ease-in-out hover:text-[#F1C900] duration-100"
               href="/program"
@@ -56,10 +56,10 @@ function Nav() {
         </div>
         <Link
           href="/contact"
-          className=" justify-center items-center relative hidden xl:flex"
+          className=" justify-center items-center relative hidden md:flex"
         >
           <motion.div
-            className="hidden xl:block  border-dashed w-20 h-20 rounded-full"
+            className="hidden md:block  border-dashed w-20 h-20 rounded-full"
             style={{
               borderWidth: "2px", // Set initial border width
               borderColor: "white", // Set initial border color
@@ -79,7 +79,7 @@ function Nav() {
         {/* Mobile Responsive Menu */}
         <button
           onClick={toggleMenu}
-          className={`xl:hidden w-12 h-12 flex flex-col relative justify-center items-center rounded-full border-4 ${
+          className={`md:hidden w-12 h-12 flex flex-col relative justify-center items-center rounded-full border-4 ${
             openMenu ? "border-[#3423A6]" : " border-[#F1C900]"
           } space-x-reverse  z-30`}
         >
@@ -106,7 +106,7 @@ function Nav() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ ease: "easeInOut", duration: 0.5 }}
-              className="xl:hidden absolute top-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-mist z-20"
+              className="lg:hidden absolute top-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-mist z-20"
             >
               <motion.div
                 initial={{ scale: 0, opacity: 0 }}
@@ -116,7 +116,7 @@ function Nav() {
                   borderRadius: ["100%", "100%", "0%"],
                 }}
                 transition={{ ease: "easeInOut", duration: 0.8 }}
-                className="xl:hidden absolute top-0 right-0 bottom-0  w-full min-h-screen bg-[#F1C900] shadow-xl p-4 gap-y-8"
+                className="lg:hidden absolute top-0 right-0 bottom-0  w-full min-h-screen bg-[#F1C900] shadow-xl p-4 gap-y-8"
               >
                 {/* Explore */}
                 <motion.section
