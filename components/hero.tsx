@@ -145,9 +145,8 @@ function Hero() {
                 src={slide}
                 alt="At-Risk Children"
                 layout="fill"
-                objectFit="cover"
-                objectPosition="center"
                 className="absolute"
+                objectFit="cover"
               />
             </motion.div>
           ))}

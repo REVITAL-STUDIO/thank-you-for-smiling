@@ -19,7 +19,7 @@ const Footer = () => {
           />
         </div>
 
-        <div className="flex flex-col md:flex-row md:px-4 md:w-[35%] lg:w-fit w-full md:justify-center md:items-start text-black ">
+        <div className="flex flex-col md:flex-row  md:w-[35%] lg:w-fit w-full md:justify-center md:items-start text-black ">
           <div className="  text-white flex flex-col gap-x-4  text-left p-4 text-base ">
             <h2 className="p-4 font-cheapSignage text-xl">Explore</h2>
             <div className="flex items-center font-dmSans border-white min-w-1/2 p-4 rounded-full  ">
@@ -67,7 +67,7 @@ const Footer = () => {
           </button>
         </div>
       </div>
-      <div className=" flex flex-col md:flex-row justify-between py-2">
+      <div className=" flex flex-col md:flex-row justify-between px-6 py-2">
         <h2 className="px-4  font-cheapSignage text-white text-[12px] relative  w-fit md:left-0">
           Thank You for Smiling © 2024{" "}
         </h2>
