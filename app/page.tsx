@@ -5,7 +5,6 @@ import About from "@/components/about";
 import Development from "@/components/development";
 import Donate from "@/components/donate";
 import Testimonies from "@/components/testimonies";
-import Book from "@/components/book";
 import FAQ from "@/components/faq";
 import Nav from "@/components/nav";
 

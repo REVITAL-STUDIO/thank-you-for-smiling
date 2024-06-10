@@ -8,18 +8,18 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <main className="bg-gradient-to-b from-[#090B0A] to-[#3423A6]">
-      <div className="flex flex-col xl:flex-row justify-between w-full  items-center p-4">
-        <div className="flex gap-4 xl:w-1/4 w-full items-center  xl:p-4">
+      <div className="flex flex-col md:flex-row justify-between w-full  items-center p-4">
+        <div className="flex gap-4 md:w-1/4 w-full items-center  md:p-4 relative left-[1%]">
           <Image
             src={"/images/logo.png"}
             height={250}
             width={250}
             alt="logo"
-            className="px-6 xl:px-0 "
+            className="px-6 md:px-0 "
           />
         </div>
 
-        <div className="flex flex-col xl:flex-row xl:px-4 xl:w-[22%] w-full xl:justify-center xl:items-start text-black ">
+        <div className="flex flex-col md:flex-row md:px-4 md:w-[35%] lg:w-fit w-full md:justify-center md:items-start text-black ">
           <div className="  text-white flex flex-col gap-x-4  text-left p-4 text-base ">
             <h2 className="p-4 font-cheapSignage text-xl">Explore</h2>
             <div className="flex items-center font-dmSans border-white min-w-1/2 p-4 rounded-full  ">
@@ -62,13 +62,13 @@ const Footer = () => {
               <span className=" ">Linkedin</span>
             </Link>
           </div>
-          <button className="p-4 border shadow-md h-fit w-full my-4 bg-white rounded-full xl:hidden">
+          <button className="p-4 border shadow-md h-fit w-full max-w-[400px] mx-auto my-4 bg-white rounded-full md:hidden">
             Apply Today
           </button>
         </div>
       </div>
-      <div className=" flex flex-col xl:flex-row justify-between py-2">
-        <h2 className="px-4  font-cheapSignage text-white text-[12px] relative  w-fit xl:left-0">
+      <div className=" flex flex-col md:flex-row justify-between py-2">
+        <h2 className="px-4  font-cheapSignage text-white text-[12px] relative  w-fit md:left-0">
           Thank You for Smiling © 2024{" "}
         </h2>
         <span className="px-4 text-sm font-dmSans text-white">

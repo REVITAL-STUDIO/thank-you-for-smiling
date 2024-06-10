@@ -116,7 +116,7 @@ function Nav() {
                   borderRadius: ["100%", "100%", "0%"],
                 }}
                 transition={{ ease: "easeInOut", duration: 0.8 }}
-                className="xl:hidden absolute top-0 right-0 bottom-0  w-full min-h-screen bg-[#F1C900] shadow-xl p-4 gap-y-8"
+                className="lg:hidden absolute top-0 right-0 bottom-0  w-full min-h-screen bg-[#F1C900] shadow-xl p-4 gap-y-8"
               >
                 {/* Explore */}
                 <motion.section
