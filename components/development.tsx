@@ -57,10 +57,10 @@ function Development() {
   });
 
   const sm = useTransform(scrollYProgress, [0, 1], [0, -50]);
-  const md = useTransform(scrollYProgress, [0, 1], [0, -50]);
+  const md = useTransform(scrollYProgress, [0, 1], [0, -150]);
   const lg = useTransform(scrollYProgress, [0, 1], [0, -250]);
 
-  const scale = useTransform(scrollYProgress, [0, 1], [0.85, 1]);
+  const scale = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
 
   return (
     <section
@@ -68,12 +68,12 @@ function Development() {
       className="radial-gradient-development min-h-screen"
     >
       {/* Title */}
-      <div className="w-full py-[10%] flex  justify-center">
+      <div className="w-full flex  justify-center">
         <motion.div
-          style={{ y: sm }}
-          className="w-[95%] flex flex-col mt-[10%] xl:flex-row xl:items-center xl:justify-between"
+          style={{ y: md }}
+          className="w-[100%] flex flex-col lg:flex-row lg:items-center lg:justify-between"
         >
-          <h1 className="text-5xl font-bold xl:text-7xl font-dmSans text-[#Fff] xl:w-3/5 w-full p-[5%] xl:p-0">
+          <h1 className="text-5xl font-bold lg:text-6xl font-dmSans text-[#Fff] lg:w-3/5 w-full p-[4%] ">
             <motion.span initial="initial" animate={controls}>
               {words.map((word, index) => (
                 <motion.span
@@ -115,7 +115,7 @@ function Development() {
       {/* Cards */}
       <motion.div
         style={{ scale }}
-        className="w-full xl:flex items-center justify-center"
+        className="w-full lg:flex items-center justify-center"
       >
         <div className="flex flex-col xl:flex-row w-[95%] justify-between items-center font-dmSans gap-y-4">
           <div className="flex flex-col bg-[#090B0A]/90  xl:w-[23%] w-[85%] rounded-md px-[2%] pt-[2%] pb-[5%] lifted ">

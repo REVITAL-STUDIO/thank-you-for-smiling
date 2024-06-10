@@ -7,7 +7,7 @@ import { useInView } from "react-intersection-observer";
 
 function About() {
   const text1 =
-    "We aim to help participants with the necessary skills, knowledge, and confidence to succeed in their chosen career paths, together.";
+    "We Aim to Help Participants With the Necessary Skills, Knowledge, and Confidence to Succeed in Their Chosen Career Paths, Together.";
   const words = text1.split("");
   const text2 =
     "Prioritizing life skills development, offering workshops and activities designed to enhance communication, problem-solving, and resilience.";
@@ -83,9 +83,9 @@ function About() {
   return (
     <section
       ref={container}
-      className="w-full xl:flex py-[5%]  xl:py-[2%] -mb-1 bg-gradient-to-b from-[#171738] via-[#726C00]/80 to-[#3423A6]"
+      className="w-full lg:flex-row flex flex-col-reverse  lg:py-[2%] lg:min-h-screen  -mb-1 bg-gradient-to-b from-[#171738] via-[#726C00]/80 to-[#3423A6]"
     >
-      <div className="w-[100%] xl:w-[50%] py-[5%] xl:py-[5%]  rounded-tr-xl rounded-br-xl relative flex justify-center items-center">
+      <div className="w-[100%] lg:w-[50%] relative hidden xl:flex lg:justify-center items-center">
         <div className="images">
           {images.map(({ src, y }, i) => {
             return (
@@ -94,17 +94,17 @@ function About() {
                 key={`i_${i}`}
                 className="imageContainer"
               >
-                <Image src={src} alt="image" fill />
+                <Image src={src} alt="image" layout="fill" />
               </motion.div>
             );
           })}
         </div>
       </div>
-      <div className=" xl:w-[40%] w-[100%] py-[10%] xl:py-0 flex justify-center items-center ">
-        <div className="flex flex-col gap-10 text-center w-full items-center relative top-[5%]">
+      <div className=" xl:w-[50%] w-[100%] py-[1%] lg:py-[3%] flex  flex-col-reverse lg:flex-row justify-center items-center ">
+        <div className="flex flex-col gap-10  text-center w-full items-center relative top-[5%] p-[4%]">
           <motion.h1
             style={{ y: lg }}
-            className="w-[85%] xl:text-4xl text-5xl text-white text-left font-dmSans font-bold"
+            className="w-[100%] lg:text-6xl text-5xl text-white text-left font-dmSans font-bold  lg:p-0"
           >
             <motion.span initial="initial" animate={controls}>
               {words.map((word, index) => (
@@ -117,14 +117,8 @@ function About() {
                   variants={wordAnimation}
                   transition={{
                     delayChildren: index * 0.05,
-                    staggerChildren: 0.05,
+                    staggerChildren: 0.08,
                   }}
-                  className={[
-                    "char",
-                    word === "We" || word === "succeed" || word === "together."
-                      ? "text-white"
-                      : "",
-                  ].join(" ")}
                 >
                   {word.split("").map((char, charIndex) => (
                     <motion.span
@@ -143,7 +137,7 @@ function About() {
           </motion.h1>
           <motion.p
             style={{ y: lg }}
-            className="w-[85%] font-cheapSignage text-lg text-[#F1C900] text-left"
+            className="w-[100%] font-cheapSignage text-lg text-[#F1C900] text-left"
           >
             <motion.span
               initial="hidden"

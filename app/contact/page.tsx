@@ -11,7 +11,7 @@ const contact = () => {
 
   return (
     <div ref={ref}>
-      <div className="min-h-screen flex justify-around items-center gap-12 bg-[#3423A6] text-white px-[4rem]">
+      <div className="min-h-screen flex justify-around items-center gap-12  bg-gradient-to-b -mb-1 to-[#090B0A] via-black  from-[#3423A6] text-white px-[4rem]">
         <motion.div
           className="flex flex-col gap-6"
           initial={{ opacity: 0, x: -40 }}
