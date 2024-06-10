@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { motion, Variants } from "framer-motion";
 import useInView from "../../hooks/useInView";
 
-const contact = () => {
+const Contact = () => {
   const ref = useRef(null);
   const inView = useInView(ref);
 
@@ -227,4 +227,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;

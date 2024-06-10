@@ -17,9 +17,9 @@ function Passion() {
               <span className="text-[#FFF200] ">Empowering Change:</span> Our
               Dedication to Inclusive Impact
             </h1>{" "}
-            <p className="invisible text-[16px] p-4 w-3/4 relative top-48">
+            <p className="invisible lg:visible text-[16px] p-4 w-3/4 relative top-48">
               Our commitment to making a positive impact extends beyond just
-              providing programs; it's rooted in our unwavering dedication to
+              providing programs; it&apos;s rooted in our unwavering dedication to
               serving those who need it most. We believe that every individual,
               regardless of their background or circumstances, deserves access
               to opportunities for growth, support, and empowerment.
