@@ -18,6 +18,9 @@ function Nav() {
     };
   }, [openMenu]);
 
+  // Resetting the state
+  setOpenMenu(false);
+
   //Opening Mobile Menu
   const toggleMenu = () => {
     setOpenMenu((prev) => !prev);
@@ -125,7 +128,7 @@ function Nav() {
                   transition={{ ease: "easeInOut", duration: 0.5, delay: 1 }}
                   className=" p-4 bg-white shadow-md rounded-md flex justify-center items-center"
                 >
-                  <div className="flex flex-col justify-center w-full p-4">
+                  <div className="flex flex-col justify-center w-full">
                     <ul className="flex flex-col gap-y-2 p-4 text-2xl font-medium font-cheapSignage  text-black ">
                       <h2 className="font-dmSans">Explore</h2>
                       <Link
@@ -148,7 +151,7 @@ function Nav() {
                       </Link>
                       <Link
                         className="transition ease-in-out pb-4 duration-100"
-                        href="/"
+                        href="/contact"
                       >
                         Contact
                       </Link>
@@ -160,7 +163,7 @@ function Nav() {
                   initial={{ opacity: 0, y: -20 }} // Initial opacity 0 and move up by 20px
                   animate={{ opacity: 1, y: 0 }} // Animated to opacity 1 and original position
                   transition={{ ease: "easeInOut", duration: 0.5, delay: 1.4 }}
-                  className="mt-[5%] p-4 bg-white shadow-md rounded-md flex justify-center items-center"
+                  className="mt-[2%] bg-white shadow-md rounded-md flex justify-center items-center"
                 >
                   <div className="flex flex-col justify-center w-full p-4">
                     <ul className="flex flex-col gap-y-2 p-4 text-2xl font-medium font-cheapSignage  text-black ">
@@ -209,7 +212,7 @@ function Nav() {
                   initial={{ opacity: 0, y: -20 }} // Initial opacity 0 and move up by 20px
                   animate={{ opacity: 1, y: 0 }} // Animated to opacity 1 and original position
                   transition={{ ease: "easeInOut", duration: 0.5, delay: 1.8 }}
-                  className="mt-[5%] p-4 bg-[#3423A6] w-full rounded-md text-xl font-cheapSignage text-white"
+                  className="mt-[2%] p-4 bg-[#3423A6] w-full rounded-md text-xl font-cheapSignage text-white"
                 >
                   Donate!
                 </motion.button>
