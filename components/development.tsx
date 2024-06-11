@@ -183,9 +183,9 @@ function Development() {
       {/* Learn More */}
       <motion.div
         style={{ y: sm }}
-        className="py-[3%] xl:py-0 flex justify-center items-center "
+        className="flex justify-center items-center  "
       >
-        <div className="w-[85%] xl:w-[95%] py-[5%]">
+        <div className="w-[85%] xl:w-[95%] pt-[10%] mt-[5%]">
           <button className="p-8  bg-white shadow-md font-cheapSignage rounded-full text-black flex justify-center items-center text-lg">
             Learn More
           </button>

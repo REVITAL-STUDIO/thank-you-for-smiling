@@ -79,7 +79,7 @@ function Nav() {
         {/* Mobile Responsive Menu */}
         <button
           onClick={toggleMenu}
-          className={`lg:hidden w-12 h-12 flex flex-col relative justify-center items-center rounded-full border-4 ${
+          className={`lg:hidden w-12 h-12 flex flex-col relative justify-center items-center rounded-full border-4 z-50 ${
             openMenu ? "border-[#3423A6]" : " border-[#F1C900]"
           } space-x-reverse  z-30`}
         >
@@ -106,7 +106,7 @@ function Nav() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ ease: "easeInOut", duration: 0.5 }}
-              className="md:hidden absolute top-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-mist z-20"
+              className="md:hidden absolute top-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-mist z-40"
             >
               <motion.div
                 initial={{ scale: 0, opacity: 0 }}
@@ -126,7 +126,7 @@ function Nav() {
                   className=" p-4 bg-white shadow-md rounded-md flex justify-center items-center"
                 >
                   <div className="flex flex-col justify-center w-full p-4">
-                    <ul className="flex flex-col gap-y-8 p-4 text-2xl font-medium font-cheapSignage  text-black ">
+                    <ul className="flex flex-col gap-y-2 p-4 text-2xl font-medium font-cheapSignage  text-black ">
                       <h2 className="font-dmSans">Explore</h2>
                       <Link
                         className="transition ease-in-out border-b  pb-4  duration-100"
@@ -163,9 +163,12 @@ function Nav() {
                   className="mt-[5%] p-4 bg-white shadow-md rounded-md flex justify-center items-center"
                 >
                   <div className="flex flex-col justify-center w-full p-4">
-                    <ul className="flex flex-col gap-y-8 p-4 text-2xl font-medium font-cheapSignage  text-black ">
+                    <ul className="flex flex-col gap-y-2 p-4 text-2xl font-medium font-cheapSignage  text-black ">
                       <h2 className="font-dmSans">Socials</h2>
-                      <Link href="/" className="  gap-x-2 flex items-center">
+                      <Link
+                        href="/"
+                        className=" pb-4  gap-x-2 flex items-center"
+                      >
                         <Image
                           src="/images/facebook.png"
                           width={20}
@@ -174,7 +177,10 @@ function Nav() {
                         />
                         <span className=" ">Facebook</span>
                       </Link>
-                      <Link href="/" className=" gap-x-2 flex items-center">
+                      <Link
+                        href="/"
+                        className=" pb-4  gap-x-2 flex items-center"
+                      >
                         <Image
                           src="/images/instagram.png"
                           width={20}
@@ -183,7 +189,10 @@ function Nav() {
                         />
                         <span className=" ">Instagram</span>
                       </Link>
-                      <Link href="/" className=" gap-x-2 items-center flex">
+                      <Link
+                        href="/"
+                        className="pb-4  gap-x-2 items-center flex"
+                      >
                         <Image
                           src="/images/linkedin.png"
                           width={20}
